@@ -1,0 +1,107 @@
+
+.header {
+    height: 20vh;
+}
+.header__togglemenu {
+    display: none;
+}
+.header__logo img {
+    width: 7rem;
+}
+.header__nav {
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+}
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.header__nav ul li a {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.header__nav ul li .header__contact {
+    font-weight: bold ;
+    background-color: var(--white);
+    padding: .5rem 2rem;
+    border-radius: 30px;
+    box-shadow: .1rem .1rem .9rem #aaaaaa ;
+}
+.main__section--one {
+    flex-direction: row;
+    height: 80vh;
+    justify-content: space-between;
+}
+.section__one-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    margin-bottom: 0;
+    padding-left: 3rem;
+}
+
+.main__section--one h1 {
+    font-size: 4.2rem;
+}
+
+.main__section--one p {
+    font-size: 2.4rem;
+}
+
+.section__one--smoothie {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    max-width: 250px;
+}
+.section__one--smoothie img {
+    width: 100%;
+}
+
+.section__one--button {
+    margin: 1rem 2rem;
+}
+.bg-details .lightpomelo {
+    justify-content: flex-end;
+}
+.bg-details .lightpomelo img {
+    top: 20rem;
+    left: 3rem;
+    filter: blur(1px);
+}
+.main__section--two {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    min-height: 300px;
+    margin-bottom: 4rem;
+}
+.main__section--two h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.main__section--three {
+    padding: 2rem;
+}
+/* .section__three--container {
+    flex-direction: row;
+}
+.section__three--article {
+    flex-basis: calc(33,3% - 1rem);
+} */
+
+
+.section__three--text {
+    font-size: 2rem;
+    padding: 0 10rem;
+}
+.bg-details .yellowlemon,
+.bg-details .pomeloslice,
+.bg-details .orangebranch {
+    display: none;
+}

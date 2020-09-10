@@ -1,0 +1,29 @@
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5fr;
+}
+.contact__container  {  
+    display: flex;
+    justify-content: flex-end;
+}
+.main__section--one h1 {
+    font-size: 6rem ;
+}
+.bg-details .orange img {
+    left: 45rem;
+}
+
+.bg-details .lightpomelo img {
+    top: 15rem;
+    left: 45rem;
+}
+@media (min-width: 1024px) {
+    body {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}

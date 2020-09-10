@@ -22,6 +22,12 @@
 
     <title> Fruit landing | More fruit, more health</title>
     <link  rel="stylesheet" href="./css/mobile.css">
+    <link  rel="stylesheet" 
+           href="./css/table.css" 
+           media=" screen and (min-width: 758px)">
+    <link  rel="stylesheet" 
+           href="./css/desktop.css" 
+           media=" screen and (min-width: 1000px)">
 </head>
 <body>
 
@@ -34,7 +40,7 @@
                 <li><a href="">Homepage</a></li>
                 <li><a href="">Recipes</a></li>
                 <li><a href="">Contact</a></li>
-                <li> <a 
+                <li class="contact__container"> <a 
                     class="header__contact" 
                     href="tel:+584126781230"> 
                     +58 4126781230
@@ -51,12 +57,18 @@
 
     </header>
 
-    <!-- background fruit -->
+    <!-- background orange -->
     <div class="bg-details">
         <figure class="orange">
             <img src="./src/img/slice.png" alt="">
         </figure>
     </div>
+    <!-- background flesh -->
+    <div class="bg-details">
+        <figure class="flesh">
+            <img src="./src/img/flesh.png" alt="">
+        </figure>
+    </div> 
 
     <main>
         <section class="main__section--one">
@@ -66,18 +78,28 @@
                 <p>- More deliveries and satisfied customers everday</p> 
                 <div class="bg-details">
                     <figure class="lightpomelo">
-                        <img src="./src/img/lightpomelo.png" alt="">
+                        <img src="./src/img/lightpomelo.png" alt="A pic of pomelo">
                     </figure>
-                </div>        
+                </div>
+                <div class="section__one--button">
+                    <a href="">Make a order</a>
+                </div>       
             </div>
-            <div class="section__one--button">
-                <a href="">Make a order</a>
-            </div>
+            <figure class="section__one--smoothie">
+                <img src="./src/img/cutorangesmothie.png" alt="">
+            </figure>
+            
+            <!-- more fruits -->
             <div class="bg-details">
                 <figure class="yellowlemon">
                     <img src="./src/img/lemon.png" alt="">
                 </figure>
-            </div>
+            </div> 
+            <div class="bg-details">
+                <figure class="yellowlemon">
+                    <img src="./src/img/lemon.png" alt="">
+                </figure>
+            </div> 
         </section>
 
         <section class="main__section--two">
@@ -89,13 +111,15 @@
             </div>
             <article>
                 <figure>
-                    <img class="paintdown" src="./src/img/mancha1.png" alt="Step one to buy">
+                    <img class="paintdown" src="./src/img/mancha1.png" alt="Paintdown background">
+                    <img class="paintdonw__icon" src="./src/icons/delivery.png" alt="Delivery Icon">
                 </figure>
                 <p>+1000 deliveries</p>
             </article>
             <article>
                 <figure>
-                    <img class="paintdown" src="./src/img/mancha2.png" alt="Step one to buy">
+                    <img class="paintdown" src="./src/img/mancha2.png"  alt="Paintdown background">
+                    <img class="paintdonw__icon" src="./src/icons/customers.png" alt="Customers Icon">
                 </figure>
                 <p>+500 happy customers</p>
             </article>
@@ -106,7 +130,8 @@
             </div>
             <article>
                 <figure>
-                    <img class="paintdown" src="./src/img/mancha1.png" alt="Step one to buy">
+                    <img class="paintdown" src="./src/img/mancha1.png"  alt="Paintdown background">
+                    <img class="paintdonw__icon" src="./src/icons/free.png" alt="Lacteos free Icon">
                 </figure>
                 <p>Lacteos free</p>
             </article>

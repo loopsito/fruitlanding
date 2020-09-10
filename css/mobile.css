@@ -52,8 +52,9 @@ main {
 
 .main__section--one {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     min-height: 500px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,6 +62,9 @@ main {
 .section__one-text {
     margin-bottom: 3rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main__section--one h1 {
     padding: 2rem 1rem;
@@ -75,6 +79,9 @@ main {
     font-size: 2rem;
     text-align: left;
     padding: 1rem 2rem;
+}
+.section__one--smoothie {
+    display: none;
 }
 
 .section__one--button {
@@ -95,19 +102,30 @@ main {
     grid-template-rows: .3fr 1fr 1fr 1fr;
     width: 100%;
     height: 80vh;
-    min-height: 560px;
+    min-height: 550px;
     position: relative;
     z-index: 20;
     text-align: center;
-    background-image: linear-gradient(180deg, var(--white), var(--dark) );
 }
 .main__section--two h2 {
     font-size: 3.6rem;
     letter-spacing: 2px;
     color: var(--dark);
 }
+
+.main__section--two article figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main__section--two .paintdown {
     width: 15rem;
+}
+
+.main__section--two .paintdonw__icon {
+    position: absolute;
 }
 
 .main__section--two article p {
@@ -121,6 +139,8 @@ main {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    position: relative;
+    z-index: 20;
 
 }
 
@@ -190,6 +210,7 @@ main {
     padding: 0 2rem;
     font-size: 3.6rem;
     letter-spacing: 2px;
+    color: var(--dark);
 }
 .main__section--four nav ul {
     display: flex;
@@ -279,12 +300,11 @@ footer ul li a {
 
 /* fruits decoration */
 .bg-details {
-    width: 100%;
     position: absolute;
     z-index: -1;
 }
 .bg-details figure {
-    height: 100%;
+    width: 100%;
     display: flex;
 }
 .bg-details img {
@@ -294,76 +314,52 @@ footer ul li a {
     justify-content: flex-end;
 }
 .bg-details .orange  img {
-    top: 5rem;
-    width: 60%;
+    top: 4rem;
+    width: 48%;
+}
+.bg-details .flesh {
+    justify-content: flex-end;
+}
+.bg-details .flesh  img {
+    top: 20rem;
+    width: 40%;
+    max-width: 15rem;
+    filter: blur(3px);
 }
 .bg-details .lightpomelo {
     justify-content: flex-start;
 }
+
 .bg-details .lightpomelo img {
-    top: 0;
+    top: 30rem;
     width: 40%;
 }
 .bg-details .yellowlemon {
     justify-content: flex-end;
-    bottom: 4rem;
 }
 .bg-details .yellowlemon img {
-    width: 20%;
-    top: 50rem;
-    right: 10rem;
+    width: 50%;
+    max-width: 10rem;
+    top: 42rem;
 }
 
 .bg-details .pomeloslice {
     justify-content: center;
 }
 .bg-details .pomeloslice img {
-    width: 30%;
+    top: 6rem;
+    width: 40%;
+    max-width: 12rem;
 }
 .bg-details .orangebranch {
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .bg-details .orangebranch img {
-    top: 20rem;
-    width: 40%;
+    top: 25rem;
+    width: 50%;
+    max-width: 18rem;
+    filter: blur(2px);
 }
 
 /* fruit decoration */
-
-@media (min-width: 500px) {
-    .header {
-        height: 20vh;
-    }
-    .header__togglemenu {
-        display: none;
-    }
-    .header__nav {
-        padding: 1rem;
-        width: 100%;
-        display: inline-block;
-    }
-    .header__nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: flex-end;
-    }
-    .header__nav ul li a {
-        font-size: 2rem;
-        margin-right: 2rem;
-    }
-    .header__nav ul li .header__contact {
-        font-weight: bold ;
-        background-color: var(--white);
-        padding: .5rem 2rem;
-        border-radius: 30px;
-        box-shadow: .1rem .1rem .9rem #aaaaaa ;
-    }
-
-    .main__section--one{
-
-    }
-    .section__one-text{
-        text-align: left;
-    }
-}
