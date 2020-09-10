@@ -21,7 +21,22 @@
     top: 15rem;
     left: 45rem;
 }
-@media (min-width: 1024px) {
+
+.main__section--three {
+    padding: 0rem;
+}
+.section__three--container {
+    flex-direction: row;
+}
+.section__three--article {
+    margin: 0;
+    flex-grow: 1;
+}
+.section__three--text {
+    font-size: 2rem;
+    padding: 0;
+}
+@media (min-width: 1025px) {
     body {
         width: 1024px;
         margin: 0 auto;

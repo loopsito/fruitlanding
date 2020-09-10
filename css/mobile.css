@@ -134,7 +134,7 @@ main {
 
 .main__section--three {
     min-height: 1000px;
-    background-image: linear-gradient(180deg, var(--dark), var(--light), var(--white) );
+    background-image: linear-gradient(180deg, var(--dark), var(--light));
     display: flex;
     flex-direction: column;
     text-align: center;

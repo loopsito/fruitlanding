@@ -84,22 +84,14 @@
     grid-column-start: 1;
     grid-column-end: 4;
 }
-
 .main__section--three {
-    padding: 2rem;
+    min-height: 450px
 }
-/* .section__three--container {
-    flex-direction: row;
-}
-.section__three--article {
-    flex-basis: calc(33,3% - 1rem);
-} */
-
-
 .section__three--text {
     font-size: 2rem;
-    padding: 0 10rem;
+    padding: 0 15rem;
 }
+
 .bg-details .yellowlemon,
 .bg-details .pomeloslice,
 .bg-details .orangebranch {
