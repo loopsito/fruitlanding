@@ -34,7 +34,8 @@
 }
 .section__three--text {
     font-size: 2rem;
-    padding: 0;
+    padding: 1.5rem;
+    margin-bottom: 0;
 }
 @media (min-width: 1025px) {
     body {
